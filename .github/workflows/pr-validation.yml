@@ -20,8 +20,11 @@ jobs:
         with:
           dotnet-version: '6.x'
       - name: Restore
-        run: dotnet restore 'src/*.sln'
+        run: dotnet restore
+        working-directory: src/
       - name: Build
         run: dotnet build --no-restore
+        working-directory: src/
       - name: Test
         run: dotnet test --no-restore --no-build
+        working-directory: src/
