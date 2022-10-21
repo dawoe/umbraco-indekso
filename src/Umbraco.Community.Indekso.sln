@@ -24,6 +24,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Community.Indekso.Infrastructure", "Infrastructure\code\Umbraco.Community.Indekso.Infrastructure.csproj", "{CCF1E539-B5FE-4063-9E06-4B5459F53A67}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackOffice", "BackOffice", "{FA103918-B25A-4331-97E7-1CD99EC02257}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Community.Indekso.BackOffice", "BackOffice\code\Umbraco.Community.Indekso.BackOffice.csproj", "{F71D0D4D-AC9C-4D52-9119-913F376EEA7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,7 @@ Global
 		{F0513D99-D402-4CE9-8559-7AE2BEBF5578} = {D73B1CC2-F7E7-4CC1-BF9E-7429B8DAFE86}
 		{5D5C0E02-D905-44E6-B237-93DB311DDD81} = {1799F89E-5423-4857-9D96-7BEA12554A89}
 		{CCF1E539-B5FE-4063-9E06-4B5459F53A67} = {8771521B-6859-4838-9B24-C74AECB4EA39}
+		{F71D0D4D-AC9C-4D52-9119-913F376EEA7E} = {FA103918-B25A-4331-97E7-1CD99EC02257}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D26423C1-52FF-45E7-83CA-5ED67BE15951}
@@ -50,5 +55,9 @@ Global
 		{CCF1E539-B5FE-4063-9E06-4B5459F53A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCF1E539-B5FE-4063-9E06-4B5459F53A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF1E539-B5FE-4063-9E06-4B5459F53A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71D0D4D-AC9C-4D52-9119-913F376EEA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71D0D4D-AC9C-4D52-9119-913F376EEA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71D0D4D-AC9C-4D52-9119-913F376EEA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71D0D4D-AC9C-4D52-9119-913F376EEA7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
