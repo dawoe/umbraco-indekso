@@ -7,6 +7,10 @@ on:
 
 jobs:
   build:
+  
+    env:
+        BUILD_CONFIG: 'Release'
+  
     runs-on: ubuntu-latest
     
     steps:
@@ -16,7 +20,7 @@ jobs:
         with:
           dotnet-version: '6.x'
       - name: Restore
-        run: dotnet restore
+        run: dotnet restore 'src/*.sln'
       - name: Build
         run: dotnet build --no-restore
       - name: Test
