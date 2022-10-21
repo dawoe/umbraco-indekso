@@ -1,0 +1,30 @@
+name: PR validation
+
+on:
+  pull_request:
+    branches:
+    - develop
+
+jobs:
+  build:
+  
+    env:
+        BUILD_CONFIG: 'Release'
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.x'
+      - name: Restore
+        run: dotnet restore 
+        working-directory: src/
+      - name: Build
+        run: dotnet build -c ${{ env.BUILD_CONFIG }} --no-restore
+        working-directory: src/
+      - name: Test
+        run: dotnet test --no-restore --no-build
+        working-directory: src/

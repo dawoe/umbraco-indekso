@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Our.Umbraco.Community.Indekso.Infrastructure</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\code\Umbraco.Community.Indekso.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <PackageId>Our.Umbraco.Community.Indekso.BackOffice</PackageId>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <StaticWebAssetBasePath>App_Plugins/Indekso</StaticWebAssetBasePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\code\Umbraco.Community.Indekso.Core.csproj" />
+  </ItemGroup>
+
+</Project>

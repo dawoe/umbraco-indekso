@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Our.Umbraco.Community.Indekso.Core</PackageId>
+  </PropertyGroup>
+</Project>
