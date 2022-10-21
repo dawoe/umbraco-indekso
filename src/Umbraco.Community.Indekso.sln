@@ -11,6 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linting", "Linting", "{4B82
 		stylecop.json = stylecop.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Props", "Build Props", "{F0513D99-D402-4CE9-8559-7AE2BEBF5578}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +26,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4B824C4B-871D-4429-8A2D-FD41DB8E35A8} = {D73B1CC2-F7E7-4CC1-BF9E-7429B8DAFE86}
+		{F0513D99-D402-4CE9-8559-7AE2BEBF5578} = {D73B1CC2-F7E7-4CC1-BF9E-7429B8DAFE86}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D26423C1-52FF-45E7-83CA-5ED67BE15951}
