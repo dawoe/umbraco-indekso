@@ -20,7 +20,7 @@
 
     Write-Host "Creating Umbraco site"
     cd $Destination
-    dotnet new umbraco -n $ProjectName --development-database-type SQLite --version $CmsVersion
+    dotnet new umbraco -n $ProjectName --development-database-type SQLite --version $CmsVersion --friendly-name "Indekso Admin" --email "admin@indekso.com" --password "indekso123"
 
     cd "$Destination\$ProjectName"
 
@@ -37,7 +37,7 @@
     $newNode.InnerText = '../Nuget'
     $propertyGroup.Node.AppendChild($newNode)  
     $xml.Save("$Destination\$ProjectName\$ProjectName.csproj")
-
+    
     cd $CurrentDir
 }
 
