@@ -2257,7 +2257,7 @@
           "Umbraco.Cms.PublishedCache.NuCache": "10.3.0"
         }
       },
-      "umbraco.community.indekso.core": {
+      "Our.Umbraco.Community.Indekso.Core": {
         "type": "Project",
         "dependencies": {
           "Umbraco.Cms.Web.BackOffice": "[10.3.0, 11.0.0)",
