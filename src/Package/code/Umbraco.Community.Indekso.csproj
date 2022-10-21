@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Our.Umbraco.Community.Indekso</PackageId>
+    <PackageTags>umbraco, umbraco-marketplace</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BackOffice\code\Umbraco.Community.Indekso.BackOffice.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\code\Umbraco.Community.Indekso.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
