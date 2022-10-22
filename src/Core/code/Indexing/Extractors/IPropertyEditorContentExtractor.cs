@@ -8,7 +8,7 @@ using Umbraco.Cms.Core.Models.PublishedContent;
 namespace Umbraco.Community.Indekso.Core.Indexing.Extractors
 {
     /// <summary>
-    /// Represents a extractor for getting content out of a property editor for full text indexing.
+    /// Extractor for getting content out of a property editor for full text indexing.
     /// </summary>
     public interface IPropertyEditorContentExtractor : IDiscoverable
     {

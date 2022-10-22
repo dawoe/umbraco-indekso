@@ -8,7 +8,7 @@ using Umbraco.Community.Indekso.Core.Indexing.Extractors;
 namespace Umbraco.Community.Indekso.Core.Indexing.Collections
 {
     /// <summary>
-    /// Represents a collection of <see cref="IPropertyEditorContentExtractor"/> implementations.
+    /// A collection of <see cref="IPropertyEditorContentExtractor"/> implementations.
     /// </summary>
     public sealed class PropertyEditorContentExtractorCollection : BuilderCollectionBase<IPropertyEditorContentExtractor>
     {
