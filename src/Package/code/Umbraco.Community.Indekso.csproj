@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\BackOffice\code\Umbraco.Community.Indekso.BackOffice.csproj" />
+    <ProjectReference Include="..\..\Extractors\code\Umbraco.Community.Indekso.Extractors.csproj" />
     <ProjectReference Include="..\..\Infrastructure\code\Umbraco.Community.Indekso.Infrastructure.csproj" />
   </ItemGroup>
 

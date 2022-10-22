@@ -16,7 +16,7 @@ namespace Umbraco.Community.Indekso.Core.Extensions
         /// Gives easy access to the <see cref="PropertyEditorContentExtractorCollectionBuilder"/>.
         /// </summary>
         /// <param name="builder">A <see cref="IUmbracoBuilder"/>.</param>
-        /// <returns>A <see cref="PropertyEditorContentExtractorCollectionBuilder"/></returns>
+        /// <returns>The <see cref="PropertyEditorContentExtractorCollectionBuilder"/>.</returns>
         public static PropertyEditorContentExtractorCollectionBuilder PropertyEditorContentExtractors(
             this IUmbracoBuilder builder) =>
             builder.WithCollectionBuilder<PropertyEditorContentExtractorCollectionBuilder>();
