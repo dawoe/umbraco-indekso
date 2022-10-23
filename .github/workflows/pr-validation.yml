@@ -26,7 +26,7 @@ jobs:
         run: dotnet build -c ${{ env.BUILD_CONFIG }} --no-restore
         working-directory: src/
       - name: Test
-        run: dotnet test Umbraco.Community.Indekso.sln --no-build 
+        run: dotnet test -c ${{ env.BUILD_CONFIG }} --no-build 
         working-directory: src/
       - name: Create code coverage report
         run: |
