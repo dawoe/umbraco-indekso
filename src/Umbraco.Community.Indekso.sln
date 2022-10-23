@@ -14,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Props", "Build Props", "{F0513D99-D402-4CE9-8559-7AE2BEBF5578}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
+		Directory.Build.Tests.props.xml = Directory.Build.Tests.props.xml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1799F89E-5423-4857-9D96-7BEA12554A89}"
@@ -43,7 +44,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extractors", "Extractors", "{8539FD5E-9798-4AFD-BDEA-C9CDBD671C1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Community.Indekso.Extractors", "Extractors\code\Umbraco.Community.Indekso.Extractors.csproj", "{5C84495B-83D0-4C14-BE6C-CAB15821E78E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.Community.Indekso.Extractors", "Extractors\code\Umbraco.Community.Indekso.Extractors.csproj", "{5C84495B-83D0-4C14-BE6C-CAB15821E78E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.Community.Indekso.Extractors.Tests", "Extractors\tests\Umbraco.Community.Indekso.Extractors.Tests.csproj", "{0911977C-5EE6-49AD-AFFF-D43394B740BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +74,10 @@ Global
 		{5C84495B-83D0-4C14-BE6C-CAB15821E78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C84495B-83D0-4C14-BE6C-CAB15821E78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C84495B-83D0-4C14-BE6C-CAB15821E78E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0911977C-5EE6-49AD-AFFF-D43394B740BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0911977C-5EE6-49AD-AFFF-D43394B740BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0911977C-5EE6-49AD-AFFF-D43394B740BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0911977C-5EE6-49AD-AFFF-D43394B740BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +91,7 @@ Global
 		{7B300CC9-606E-47AF-B653-BA91DF8256A5} = {B80847BB-7371-4767-ADB4-8A738DBB5CFC}
 		{1B62CF40-4384-4076-B4FE-D658AF27C0FA} = {D73B1CC2-F7E7-4CC1-BF9E-7429B8DAFE86}
 		{5C84495B-83D0-4C14-BE6C-CAB15821E78E} = {8539FD5E-9798-4AFD-BDEA-C9CDBD671C1C}
+		{0911977C-5EE6-49AD-AFFF-D43394B740BF} = {8539FD5E-9798-4AFD-BDEA-C9CDBD671C1C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D26423C1-52FF-45E7-83CA-5ED67BE15951}
