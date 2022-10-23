@@ -15,28 +15,29 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
+      
       - name: Setup dotnet
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '6.x'
+      
       - name: Restore
         run: dotnet restore 
         working-directory: src/
+      
       - name: Build
         run: dotnet build -c ${{ env.BUILD_CONFIG }} --no-restore
         working-directory: src/
+      
       - name: Test
         run: dotnet test -c ${{ env.BUILD_CONFIG }} --no-build --collect:"XPlat Code Coverage" --logger trx --results-directory coverage
         working-directory: src/
-      - name: Create code coverage report
-        run: |
-            dotnet tool install -g dotnet-reportgenerator-globaltool
-            reportgenerator -reports:$(Agent.WorkFolder)/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:'Cobertura'
-            
+      
+              
       - name: Code Coverage Summary Report
         uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-            filename: coverage/coverage.cobertura.xml
+            filename: src/**/coverage.cobertura.xml
             badge: true
             format: 'markdown'
             output: 'both'
