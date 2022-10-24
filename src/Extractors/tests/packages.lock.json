@@ -2138,7 +2138,7 @@
           "Umbraco.Cms.Web.Website": "[10.3.0, 11.0.0)"
         }
       },
-      "umbraco.community.indekso.extractors": {
+      "Our.Umbraco.Community.Indekso.Extractors": {
         "type": "Project",
         "dependencies": {
           "Our.Umbraco.Community.Indekso.Core": "[10.0.0, )",
