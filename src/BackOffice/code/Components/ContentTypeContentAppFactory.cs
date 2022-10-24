@@ -6,7 +6,7 @@ using Umbraco.Cms.Core.Models;
 using Umbraco.Cms.Core.Models.ContentEditing;
 using Umbraco.Cms.Core.Models.Membership;
 
-namespace Umbraco.Community.Indekso.BackOffice.Factories
+namespace Umbraco.Community.Indekso.BackOffice.Components
 {
     /// <summary>
     /// Factory for creating the content type content app.

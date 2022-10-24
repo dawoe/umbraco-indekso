@@ -4,7 +4,7 @@
 
 using Umbraco.Cms.Core.Composing;
 using Umbraco.Cms.Core.DependencyInjection;
-using Umbraco.Community.Indekso.BackOffice.Factories;
+using Umbraco.Community.Indekso.BackOffice.Components;
 
 namespace Umbraco.Community.Indekso.BackOffice
 {
@@ -14,6 +14,17 @@ namespace Umbraco.Community.Indekso.BackOffice
     internal sealed class IndeksoBackOfficeComposer : IComposer
     {
         /// <inheritdoc/>
-        public void Compose(IUmbracoBuilder builder) => builder.ContentApps().Append<ContentTypeContentAppFactory>();
+        public void Compose(IUmbracoBuilder builder)
+        {
+            if (builder.ContentApps().Has<ContentTypeContentAppFactory>() == false)
+            {
+                builder.ContentApps().Append<ContentTypeContentAppFactory>();
+            }
+
+            if (builder.ManifestFilters().Has<ManifestFilter>() == false)
+            {
+                builder.ManifestFilters().Append<ManifestFilter>();
+            }
+        }
     }
 }
