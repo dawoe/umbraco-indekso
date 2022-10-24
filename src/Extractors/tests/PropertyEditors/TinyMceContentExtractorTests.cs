@@ -16,11 +16,11 @@ namespace Umbraco.Community.Indekso.Extractors.Tests.PropertyEditors
         /// <summary>
         /// Tests <see cref="TinyMceContentExtractor.ExtractContent"/> with content set.
         /// </summary>
+        [TestCase("", TestName = "AsEmptyString")]
+        [TestCase("This is <b>some</b> text", TestName = "AsHtmlString")]
         [Test]
-        public void ExtractContentWithContentSet()
+        public void ExtractContentWithContentSet(string text)
         {
-            var text = "This is <b>some</b> text";
-
             var content = this.CreateContent(new HtmlEncodedString(text));
 
             var result = this.Extractor!.ExtractContent(content, Alias);
