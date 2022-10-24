@@ -1,28 +1,64 @@
 (function () {
   'use strict';
 
-  function appController($scope, eventsService) {
+  function appController($scope, eventsService, angularHelper) {
 
-    var unsubscribe = [];
-
-    console.log($scope.model);
+    var events = [];
+    var watchers = [];
+    var isLoading = true;
 
     var vm = this;
 
-    console.log(vm);
+    // get the doctype editor scope so we can listen to changes being made
+    var doctypEditorScope = angularHelper.traverseScopeChain($scope,
+      s => s && s.vm && s.vm.constructor.name == "DocumentTypesEditController");
 
-    unsubscribe.push(eventsService.on("editors.documentType.saved",
+    vm.form = angularHelper.getRequiredCurrentForm(doctypEditorScope);
+
+    vm.save = function() {
+      console.log('Save clicked');
+    }
+    
+    events.push(eventsService.on("editors.documentType.saved",
       function () {
         console.log('Doc type saved');
 
       }));
 
-    vm.$onDestroy = function () {
+    $scope.$on('$destroy', function () {
       console.log('on destroy called');
-      unsubscribe.forEach(x => x());
+      events.forEach(x => x());
+      watchers.forEach(x => x());
+    });
+
+    function init() {
+      watchers.push(
+        $scope.$watch('vm.form.$dirty',
+          function (newVal, oldVal) {
+            if (isLoading) {
+              return;
+            }
+
+            if (oldVal === undefined) {
+              // still initializing, ignore
+              return;
+            }
+
+            if (oldVal === newVal) {
+              return;
+            }
+
+            console.log(oldVal);
+            console.log(newVal);
+
+          }, true));
+
+      isLoading = false;
     }
+    
+    init();
   }
 
   angular.module('umbraco').controller('Umbraco.Community.Indekso.AppController',
-    ['$scope', 'eventsService', appController]);
+    ['$scope', 'eventsService','angularHelper', appController]);
 })();
