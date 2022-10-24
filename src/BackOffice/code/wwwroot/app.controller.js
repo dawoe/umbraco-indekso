@@ -3,7 +3,7 @@
 
   function appController($scope) {
 
-    console.log($scope);
+    console.log($scope.model);
 
     var vm = this;
 
