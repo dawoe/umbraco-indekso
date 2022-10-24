@@ -31,8 +31,11 @@ namespace Umbraco.Community.Indekso.Extractors.Tests.PropertyEditors
             Assert.That(result, Is.True);
         }
 
+        /// <summary>
+        /// Tests <see cref="TextBoxContentExtractor.ExtractContent"/> with content set.
+        /// </summary>
         [Test]
-        public void IsExtractForWithContentSet()
+        public void ExtractContentWithContentSet()
         {
             var text = "This is some text";
 
