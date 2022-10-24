@@ -11,7 +11,7 @@ namespace Umbraco.Community.Indekso.Extractors.PropertyEditors
     /// <summary>
     /// The Content extractor for text box and text area property editor.
     /// </summary>
-    public class TextBoxContentExtractor : IPropertyEditorContentExtractor
+    public sealed class TextBoxContentExtractor : IPropertyEditorContentExtractor
     {
         /// <inheritdoc />
         public bool IsExtractFor(IPublishedPropertyType propertyType) =>
