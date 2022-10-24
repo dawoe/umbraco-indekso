@@ -48,6 +48,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.Community.Indekso.E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.Community.Indekso.Extractors.Tests", "Extractors\tests\Umbraco.Community.Indekso.Extractors.Tests.csproj", "{0911977C-5EE6-49AD-AFFF-D43394B740BF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github Workflows", "Github Workflows", "{F0373239-C595-42C9-B99D-B05536C347CD}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\pr-validation.yml = ..\.github\workflows\pr-validation.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +97,7 @@ Global
 		{1B62CF40-4384-4076-B4FE-D658AF27C0FA} = {D73B1CC2-F7E7-4CC1-BF9E-7429B8DAFE86}
 		{5C84495B-83D0-4C14-BE6C-CAB15821E78E} = {8539FD5E-9798-4AFD-BDEA-C9CDBD671C1C}
 		{0911977C-5EE6-49AD-AFFF-D43394B740BF} = {8539FD5E-9798-4AFD-BDEA-C9CDBD671C1C}
+		{F0373239-C595-42C9-B99D-B05536C347CD} = {D73B1CC2-F7E7-4CC1-BF9E-7429B8DAFE86}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D26423C1-52FF-45E7-83CA-5ED67BE15951}
