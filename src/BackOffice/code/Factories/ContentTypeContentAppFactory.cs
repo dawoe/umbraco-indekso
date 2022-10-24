@@ -21,11 +21,6 @@ namespace Umbraco.Community.Indekso.BackOffice.Factories
                 return null;
             }
 
-            if (contentType.IsContainer)
-            {
-                return null;
-            }
-
             if (contentType.HasIdentity == false)
             {
                 return null;
@@ -36,7 +31,7 @@ namespace Umbraco.Community.Indekso.BackOffice.Factories
                 Alias = "indeksoContentTypeContentApp",
                 Name = "Indekso",
                 Icon = "icon-search",
-                View = "/App_Plugins/Indekso/view/content-app.html",
+                View = "/App_Plugins/Indekso/views/contenttype-app.html",
             };
         }
     }
