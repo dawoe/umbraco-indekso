@@ -8,6 +8,12 @@
         "resolved": "3.1.2",
         "contentHash": "wuLDIDKD5XMt0A7lE31JPenT7QQwZPFkP5rRpdJeblyXZ9MGLI8rYjvm5fvAKln+2/X+4IxxQDxBtwdrqKNLZw=="
       },
+      "Meziantou.Analyzer": {
+        "type": "Direct",
+        "requested": "[1.0.740, )",
+        "resolved": "1.0.740",
+        "contentHash": "wB1iXck2q3rlF9pTW+qxqa166Yba+FFdWC21L+8pgm41qH9dE6/AyJg0D/+cn/yZ9BzO5XgQvWdadKnLP3EYcA=="
+      },
       "Microsoft.NET.Test.Sdk": {
         "type": "Direct",
         "requested": "[17.3.2, )",

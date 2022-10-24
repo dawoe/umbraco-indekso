@@ -2,6 +2,12 @@
   "version": 1,
   "dependencies": {
     "net6.0": {
+      "Meziantou.Analyzer": {
+        "type": "Direct",
+        "requested": "[1.0.740, )",
+        "resolved": "1.0.740",
+        "contentHash": "wB1iXck2q3rlF9pTW+qxqa166Yba+FFdWC21L+8pgm41qH9dE6/AyJg0D/+cn/yZ9BzO5XgQvWdadKnLP3EYcA=="
+      },
       "StyleCop.Analyzers": {
         "type": "Direct",
         "requested": "[1.2.0-beta.435, )",
