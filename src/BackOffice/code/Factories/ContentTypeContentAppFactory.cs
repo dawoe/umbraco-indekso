@@ -31,7 +31,7 @@ namespace Umbraco.Community.Indekso.BackOffice.Factories
                 Alias = "indeksoContentTypeContentApp",
                 Name = "Indekso",
                 Icon = "icon-search",
-                View = "/App_Plugins/Indekso/views/contenttype-app.html",
+                View = "/App_Plugins/Indekso/app.html",
             };
         }
     }
