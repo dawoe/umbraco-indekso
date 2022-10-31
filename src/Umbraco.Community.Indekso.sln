@@ -60,11 +60,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		..\.github\workflows\pr-validation.yml = ..\.github\workflows\pr-validation.yml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{5F8FA4CE-3A51-4FD6-B29B-EE5088459CAD}"
-	ProjectSection(SolutionItems) = preProject
-		..\.github\config\codeql-config.yml = ..\.github\config\codeql-config.yml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,7 +116,6 @@ Global
 		{4A003E39-6AD7-40CD-A070-E4FEC731E86E} = {1799F89E-5423-4857-9D96-7BEA12554A89}
 		{961648D8-9C8C-44FC-A3AC-88DF99DA2414} = {FA103918-B25A-4331-97E7-1CD99EC02257}
 		{FDCD5062-62A6-48E7-A4CD-968B8F3A4F8C} = {F0373239-C595-42C9-B99D-B05536C347CD}
-		{5F8FA4CE-3A51-4FD6-B29B-EE5088459CAD} = {F0373239-C595-42C9-B99D-B05536C347CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D26423C1-52FF-45E7-83CA-5ED67BE15951}
