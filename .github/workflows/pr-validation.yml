@@ -47,9 +47,9 @@ jobs:
         uses: marocchino/sticky-pull-request-comment@v2       
         with:
             recreate: true
-            path: reports/code-coverage-results.md
+            path: reports/Summary.md
 
       - name: Write to Job Summary
-        run: cat reports/code-coverage-results.md >> $GITHUB_STEP_SUMMARY
+        run: cat reports/Summary.md >> $GITHUB_STEP_SUMMARY
 
  
